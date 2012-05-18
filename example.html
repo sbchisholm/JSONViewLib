@@ -1,0 +1,21 @@
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="default.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="jsonview.js"></script>
+    <script src="default.js"></script>
+  </head>
+
+  <body>
+    <div id="placeHolder"></div>
+  </body>
+
+  <script>
+    var obj = {"colorsArray":[{"colorName":"red","hexValue":"#f00"},{"colorName":"green","hexValue":"#0f0"},{"colorName":"blue","hexValue":"#00f"},{"colorName":"cyan","hexValue":"#0ff"},{"colorName":"magenta","hexValue":"#f0f"},{"colorName":"yellow","hexValue":"#ff0"},{"colorName":"black","hexValue":"#000"}]}; 
+    var element = JSONFormatter.prototype.jsonToHTML(obj);
+    $('#placeHolder').html(element);
+  </script>
+</html>
+
